@@ -34,13 +34,10 @@ export class SpotifyServices {
                         .map(res => res.json());
     }
 
+//Grab the album information
     getAlbum(id:string) {
         this.albumUrl = 'https://api.spotify.com/v1/albums/'+id;
         return this._http.get(this.albumUrl)
                         .map(res => res.json());
     }
-
-
-
-
 }
