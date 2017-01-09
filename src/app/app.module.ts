@@ -6,6 +6,7 @@ import { HttpModule } from '@angular/http';
 
 //Import modules from within app here.
 import { AppComponent } from './app.component';
+import { NavbarComponent } from './components/navbar.component';
 
 import { routing } from './app.routing';
 
@@ -14,9 +15,9 @@ import { routing } from './app.routing';
     imports:        [ BrowserModule, routing,
                             FormsModule, HttpModule ],
 
-    declarations: [ AppComponent ],
+    declarations: [ AppComponent, NavbarComponent ],
 
     bootstrap: [ AppComponent ]
 })
 
-export class AppModule {}
+export class AppModule { }
