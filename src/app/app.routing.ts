@@ -6,7 +6,6 @@ import { Routes, RouterModule } from '@angular/router';
 
 
 
-const appRoutes: Routes = [
-]
+const appRoutes: Routes = [ ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);
