@@ -7,6 +7,8 @@ import { HttpModule } from '@angular/http';
 //Import modules from within app here.
 import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar.component';
+import { SearchComponent } from './components/search.component';
+import { AboutComponent } from './pages/about.pages';
 
 import { routing } from './app.routing';
 
@@ -15,7 +17,8 @@ import { routing } from './app.routing';
     imports:        [ BrowserModule, routing,
                             FormsModule, HttpModule ],
 
-    declarations: [ AppComponent, NavbarComponent ],
+    declarations: [ AppComponent, NavbarComponent,
+                            SearchComponent, AboutComponent ],
 
     bootstrap: [ AppComponent ]
 })
