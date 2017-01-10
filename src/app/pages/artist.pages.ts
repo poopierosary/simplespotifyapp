@@ -1,9 +1,13 @@
+//Modules from libraries.
 import { Component, OnInit } from '@angular/core';
 import { Router, ActivatedRoute } from '@angular/router';
 
+//Modules from within app.
 import { Artist } from '../../artist';
 import { Album } from '../../album';
 import { SpotifyServices } from '../services/spotify.services';
+
+
 
 @Component ({
     moduleId: module.id,

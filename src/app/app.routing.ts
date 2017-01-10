@@ -6,7 +6,7 @@ import { Routes, RouterModule } from '@angular/router';
 import { SearchComponent } from './components/search.component';
 import { AboutComponent } from './pages/about.pages';
 import { ArtistComponent } from './pages/artist.pages';
-
+import { AlbumComponent } from './pages/album.pages';
 
 const appRoutes: Routes = [
     {
@@ -21,6 +21,10 @@ const appRoutes: Routes = [
         path: 'artist/:id',
         component: ArtistComponent
     },
+    {
+        path: 'album/:id',
+        component: AlbumComponent
+    }
 ];
 
 export const routing: ModuleWithProviders = RouterModule.forRoot(appRoutes);

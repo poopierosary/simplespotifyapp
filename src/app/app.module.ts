@@ -10,6 +10,7 @@ import { NavbarComponent } from './components/navbar.component';
 import { SearchComponent } from './components/search.component';
 import { AboutComponent } from './pages/about.pages';
 import { ArtistComponent } from './pages/artist.pages';
+import { AlbumComponent } from './pages/album.pages';
 
 import { routing } from './app.routing';
 
@@ -20,7 +21,7 @@ import { routing } from './app.routing';
 
     declarations: [ AppComponent, NavbarComponent,
                             SearchComponent, AboutComponent,
-                            ArtistComponent ],
+                            ArtistComponent, AlbumComponent ],
 
     bootstrap: [ AppComponent ]
 })
