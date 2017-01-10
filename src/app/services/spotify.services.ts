@@ -13,31 +13,26 @@ export class SpotifyServices {
 
 //Query the search url to retrieve the artists
     searchMusic ( str:string, type = 'artist' ) {
-        this.searchUrl = "https://apit.spotify.com/v1/search?query=" + str +
-        '&offset=0&limit=20type=' + type + '&market=US';
-         return this._http.get(this.searchUrl)
-                         .map(res => res.json());
+        this.searchUrl = "https://api.spotify.com/v1/search?query=" + str +
+        '&offset=0&limit=20&type=' + type + '&market=US';
+         return this._http.get(this.searchUrl).map(res => res.json());
     }
 
 //Grab the artist(s)
     getArtist ( id:string ) {
-        this.artistUrl = 'https://api.sportify.com/v1/artists/' + id;
-        return this._http.get(this.artistUrl)
-                        .map(res => res.json());
+        this.artistUrl = 'https://api.spotify.com/v1/artists/' + id;
+        return this._http.get(this.artistUrl).map(res => res.json());
     }
 
 //Grab the list of albums per artist
     getAlbums ( artistId:string ) {
-        this.albumsUrl = 'https://api.spotify.com/v1/artists/' + artistId +
-            'albums';
-        return this._http.get(this.albumsUrl)
-                        .map(res => res.json());
+        this.albumsUrl = 'https://api.spotify.com/v1/artists/' + artistId + 'albums';
+        return this._http.get(this.albumsUrl).map(res => res.json());
     }
 
 //Grab the album information
     getAlbum ( id:string ) {
         this.albumUrl = 'https://api.spotify.com/v1/albums/' + id;
-        return this._http.get(this.albumUrl)
-                        .map(res => res.json());
+        return this._http.get(this.albumUrl).map(res => res.json());
     }
 }

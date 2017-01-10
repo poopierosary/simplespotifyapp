@@ -9,6 +9,7 @@ import { AppComponent } from './app.component';
 import { NavbarComponent } from './components/navbar.component';
 import { SearchComponent } from './components/search.component';
 import { AboutComponent } from './pages/about.pages';
+import { ArtistComponent } from './pages/artist.pages';
 
 import { routing } from './app.routing';
 
@@ -18,7 +19,8 @@ import { routing } from './app.routing';
                             FormsModule, HttpModule ],
 
     declarations: [ AppComponent, NavbarComponent,
-                            SearchComponent, AboutComponent ],
+                            SearchComponent, AboutComponent,
+                            ArtistComponent ],
 
     bootstrap: [ AppComponent ]
 })
