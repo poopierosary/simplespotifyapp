@@ -7,19 +7,19 @@ var artist_pages_1 = require("./pages/artist.pages");
 var album_pages_1 = require("./pages/album.pages");
 var appRoutes = [
     {
-        path: 'simplespotifyapp',
+        path: '',
         component: search_component_1.SearchComponent
     },
     {
-        path: 'simplespotifyapp/about',
+        path: 'about',
         component: about_pages_1.AboutComponent
     },
     {
-        path: 'simplespotifyapp/artist/:id',
+        path: 'artist/:id',
         component: artist_pages_1.ArtistComponent
     },
     {
-        path: 'simplespotifyapp/album/:id',
+        path: 'album/:id',
         component: album_pages_1.AlbumComponent
     }
 ];
