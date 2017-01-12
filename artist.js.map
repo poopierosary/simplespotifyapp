@@ -1,1 +1,0 @@
-{"version":3,"sources":["/src/artist.ts"],"names":[],"mappings":"AAAA,oBAAoB;;AAIpB;IAAA;IAKA,CAAC;IAAD,aAAC;AAAD,CALA,AAKC,IAAA;AALY,wBAAM","file":"artist.js","sourcesContent":["//A class for artist\n\nimport { Album } from './album';\n\nexport class Artist {\n    id: number;\n    name: string;\n    genres: any[];\n    albums: Album[];\n}"],"sourceRoot":"/src"}
