@@ -1,1 +1,0 @@
-{"version":3,"sources":["/src/album.ts"],"names":[],"mappings":"AAAA,mBAAmB;;AAEnB;IAAA;IAEA,CAAC;IAAD,YAAC;AAAD,CAFA,AAEC,IAAA;AAFY,sBAAK","file":"album.js","sourcesContent":["//A class for album\n\nexport class Album {\n    id: number;\n}"],"sourceRoot":"/src"}
